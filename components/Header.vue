@@ -2,7 +2,20 @@
   <header class="w-full flex justify-between items-center px-8 py-4 shadow">
     <!-- left part of the header start -->
     <div id="left" class="flex items-center">
-      <img src="../assets/Frame.png" alt="" class="w-36 cursor-pointer mr-14" />
+      <img
+        src="../assets/Frame.png"
+        alt=""
+        class="
+          w-36
+          cursor-pointer
+          mr-14
+          transform
+          hover:translate-x-1
+          transition
+          200
+          ease-in
+        "
+      />
       <div
         class="
           w-8
@@ -36,7 +49,7 @@
     <!-- middle part of the header start -->
     <div
       id="middle"
-      class="w-1/4 md:w-2/5 lg:w-3/5 flex justify-between items-center"
+      class="w-1/4 md:w-2/5 xl:w-3/5 flex justify-between items-center"
     >
       <div id="search" class="w-full px-3 bg-gray-100 h-14 flex items-center">
         <select
@@ -80,6 +93,7 @@
 
     <!-- right part of the header start -->
     <div class="flex items-center">
+      <!-- notification icon -->
       <div
         id="notificaton"
         class="
@@ -91,6 +105,7 @@
           rounded-xl
           bg-primary-100
           cursor-pointer
+          hover:shadow-md
         "
       >
         <svg
