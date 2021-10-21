@@ -38,10 +38,11 @@
           bg-white
           shadow
           rounded-full
-          flex
           justify-center
           items-center
           cursor-pointer
+          hidden
+          md:flex
         "
       >
         <svg
@@ -63,7 +64,15 @@
     <!-- middle part of the header start -->
     <div
       id="middle"
-      class="w-1/4 md:w-2/5 xl:w-3/5 flex justify-between items-center"
+      class="
+        w-1/4
+        md:w-2/5
+        xl:w-3/5
+        justify-between
+        items-center
+        hidden
+        md:flex
+      "
     >
       <div id="search" class="w-full px-3 bg-gray-100 h-14 flex items-center">
         <select
@@ -107,7 +116,7 @@
     <!-- middle part of the header end -->
 
     <!-- right part of the header start -->
-    <div class="flex items-center">
+    <div class="items-center hidden md:flex">
       <!-- notification icon -->
       <div
         id="notificaton"
@@ -181,9 +190,39 @@
       </div>
     </div>
     <!-- right part of the header end -->
+
+    <!-- Mobile header start -->
+    <div v-if="showMenu" class="fixed top-20 right-0 h-full">
+      <MobileHeader />
+    </div>
+    <!-- Mobile header end -->
+
+    <!-- menu start -->
+    <svg
+      @click="showMenu = !showMenu"
+      class="md:hidden h-6 w-6 cursor-pointer"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="#46B2C8"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16"
+      />
+    </svg>
+    <!-- menu end -->
   </header>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      showMenu: false,
+    }
+  },
+}
 </script>
