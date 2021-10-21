@@ -1,35 +1,63 @@
 <template>
-  <div
-    class="
-      flex
-      justify-between
-      items-center
-      px-5
-      py-6
-      border-b-2
-      hover:bg-primary-100 hover:shadow
-    "
-  >
-    <div class="flex flex-col items-center cursor-pointer">
-      <img src="../assets/photo.png" class="rounded-full" alt="" />
-    </div>
-    <div class="flex flex-col">
-      <span class="text-xs pb-1.5 font-medium">Adebayo Adeoye Emmanuel</span>
-      <span class="text-xs pb-1.5 text-gray-400">08069786754</span>
-      <span class="text-xs pb-1.5 text-gray-400">Akure</span>
-    </div>
-    <svg
-      class="cursor-pointer"
-      width="8"
-      height="12"
-      viewBox="0 0 8 12"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+  <div class="col-span-3">
+    <!-- agent -->
+    <div
+      class="
+        w-100
+        h-12
+        bg-primary-200
+        py-2
+        px-3.5
+        flex
+        items-center
+        text-white
+        font-semibold
+      "
     >
-      <path
-        d="M1.17 0.99999C0.983753 1.18735 0.879211 1.4408 0.879211 1.70499C0.879211 1.96918 0.983753 2.22263 1.17 2.40999L4.71 5.99999L1.17 9.53999C0.983753 9.72735 0.879211 9.9808 0.879211 10.245C0.879211 10.5092 0.983753 10.7626 1.17 10.95C1.26297 11.0437 1.37357 11.1181 1.49543 11.1689C1.61729 11.2197 1.74799 11.2458 1.88 11.2458C2.01202 11.2458 2.14272 11.2197 2.26458 11.1689C2.38644 11.1181 2.49704 11.0437 2.59 10.95L6.83 6.70999C6.92373 6.61703 6.99813 6.50643 7.04889 6.38457C7.09966 6.26271 7.1258 6.132 7.1258 5.99999C7.1258 5.86798 7.09966 5.73727 7.04889 5.61541C6.99813 5.49355 6.92373 5.38295 6.83 5.28999L2.59 0.99999C2.49704 0.906262 2.38644 0.831868 2.26458 0.781099C2.14272 0.73033 2.01202 0.704191 1.88 0.704191C1.74799 0.704191 1.61729 0.73033 1.49543 0.781099C1.37357 0.831868 1.26297 0.906262 1.17 0.99999Z"
-        fill="#023A59"
-      />
-    </svg>
+      Agents
+    </div>
+
+    <div class="grid grid-cols-3 text-sm border-b border-gray-200">
+      <div class="border-b-2 border-black px-4 py-5 cursor-pointer">All</div>
+      <div class="text-gray-500 px-4 py-5 flex items-center cursor-pointer">
+        <svg
+          class="mr-2"
+          width="10"
+          height="10"
+          viewBox="0 0 10 10"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="5" cy="5" r="5" fill="#2EB255" />
+        </svg>
+        Online
+      </div>
+      <div class="text-gray-500 px-4 py-5 flex items-center cursor-pointer">
+        <svg
+          class="mr-2"
+          width="10"
+          height="10"
+          viewBox="0 0 10 10"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="5" cy="5" r="5" fill="#D14349" />
+        </svg>
+        Offline
+      </div>
+    </div>
+    <Agent />
+    <Agent />
+    <Agent />
+    <Agent />
+    <Agent />
+    <Agent />
+    <Agent />
+    <Agent />
+    <Agent />
+    <Agent />
+    <Agent />
+    <Agent />
+    <Agent />
   </div>
 </template>
