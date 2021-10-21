@@ -1,5 +1,19 @@
 <template>
-  <header class="w-full flex justify-between items-center px-8 py-4 shadow">
+  <header
+    class="
+      w-full
+      flex
+      justify-between
+      items-center
+      bg-white
+      px-8
+      py-4
+      shadow
+      fixed
+      top-0
+      z-50
+    "
+  >
     <!-- left part of the header start -->
     <div id="left" class="flex items-center">
       <img

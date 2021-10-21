@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="">
     <Header />
     <div class="grid grid-cols-12">
       <!-- side nav -->
