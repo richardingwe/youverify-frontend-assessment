@@ -11,7 +11,8 @@ module.exports = {
                     300: '#0F808C',
                     400: '#1C697A',
                     500: '#023A59',
-                }
+                },
+                title: '#C2E2E9'
             },
             fontSize: {
                 12: '12px'
