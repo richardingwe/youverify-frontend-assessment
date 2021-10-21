@@ -1,14 +1,13 @@
 <template>
   <div class="">
     <Header />
-    <div class="grid grid-cols-12">
-      <!-- side nav -->
-      <div class="col-span-2">
-        <SideNav />
+    <!-- side nav -->
+    <SideNav />
+    <div class="flex">
+      <div class="w-64 mr-10" />
+      <div class="w-full">
+        <Main />
       </div>
-
-      <!-- main -->
-      <div class="col-span-10"></div>
     </div>
   </div>
 </template>
