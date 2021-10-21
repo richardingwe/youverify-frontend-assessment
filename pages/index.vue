@@ -4,7 +4,7 @@
     <!-- side nav -->
     <SideNav />
     <div class="flex">
-      <div class="w-14 md:w-64 md:mr-10" />
+      <div class="w-14 lg:w-64 lg:mr-10" />
       <div class="w-full">
         <Main />
       </div>
