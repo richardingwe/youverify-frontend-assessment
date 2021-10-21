@@ -1,10 +1,12 @@
 <template>
   <div class="">
-    <Header />
+    <Header @SideNav="showSideNav = !showSideNav" />
     <!-- side nav -->
-    <SideNav />
+    <div v-if="showSideNav">
+      <SideNav />
+    </div>
     <div class="flex">
-      <div class="w-14 lg:w-64 lg:mr-10" />
+      <div v-if="showSideNav" class="w-14 lg:w-64 lg:mr-10" />
       <div class="w-full">
         <Main />
       </div>
@@ -16,5 +18,10 @@
 import Header from '~/components/Header.vue'
 export default {
   components: { Header },
+  data() {
+    return {
+      showSideNav: true,
+    }
+  },
 }
 </script>

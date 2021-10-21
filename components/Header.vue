@@ -37,6 +37,7 @@
           mr-2
           bg-white
           shadow
+          hover:shadow-md
           rounded-full
           justify-center
           items-center
@@ -44,8 +45,11 @@
           hidden
           md:flex
         "
+        @click="handleSideNav"
       >
         <svg
+          class="transition 200 ease-in"
+          :class="{ 'rotate-180': rotate }"
           width="12"
           height="12"
           viewBox="0 0 12 12"
@@ -222,7 +226,14 @@ export default {
   data() {
     return {
       showMenu: false,
+      rotate: false,
     }
+  },
+  methods: {
+    handleSideNav() {
+      this.$emit('SideNav')
+      this.rotate = !this.rotate
+    },
   },
 }
 </script>
