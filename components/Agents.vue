@@ -1,22 +1,12 @@
 <template>
   <div class="flex justify-between items-center px-5 py-6 border-b-2">
     <div class="flex flex-col items-center cursor-pointer">
-      <img src="../assets/plus.svg" class="mb-1.5" alt="" />
-      <span class="text-xs text-center text-gray-600"
-        >Assign <br />
-        Agent</span
-      >
+      <img src="../assets/photo.png" class="rounded-full" alt="" />
     </div>
     <div class="flex flex-col">
-      <span class="text-xs pb-1.5 font-medium">Abiodun Olawale Solomon</span>
-      <span class="text-xs pb-1.5 text-gray-400"
-        >12b Emmanuel Hign street, Sur...</span
-      >
-      <span class="text-xs pb-1.5 text-gray-400 flex">
-        <img src="../assets/XMLID 1.svg" class="mr-2" alt="" />
-        Sterling Bank PLC
-      </span>
-      <span class="text-xs pb-1.5 text-blue-800 font-medium">a day ago</span>
+      <span class="text-xs pb-1.5 font-medium">Adebayo Adeoye Emmanuel</span>
+      <span class="text-xs pb-1.5 text-gray-400">08069786754</span>
+      <span class="text-xs pb-1.5 text-gray-400">Akure</span>
     </div>
     <svg
       class="cursor-pointer"

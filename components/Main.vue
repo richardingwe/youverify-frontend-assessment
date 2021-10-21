@@ -22,9 +22,11 @@
         </div>
 
         <div class="grid grid-cols-3 bg-white text-sm border-b border-gray-200">
-          <div class="border-b-2 border-black px-4 py-5">24 Unassigned</div>
-          <div class="text-gray-500 px-4 py-5">12 assigned</div>
-          <div class="text-gray-500 px-4 py-5">30 Completed</div>
+          <div class="border-b-2 border-black px-4 py-5 cursor-pointer">
+            24 Unassigned
+          </div>
+          <div class="text-gray-500 px-4 py-5 cursor-pointer">12 assigned</div>
+          <div class="text-gray-500 px-4 py-5 cursor-pointer">30 Completed</div>
         </div>
         <div>
           <Task />
@@ -67,12 +69,49 @@
           Agents
         </div>
 
-        <!-- assigned -->
-        <div class="grid grid-cols-3 bg-gray-300 text-sm">
-          <div class="border-b-2 border-black px-4 py-5">All</div>
-          <div class="text-gray-500 px-4 py-5">Online</div>
-          <div class="text-gray-500 px-4 py-5">Offline</div>
+        <div class="grid grid-cols-3 text-sm border-b border-gray-200">
+          <div class="border-b-2 border-black px-4 py-5 cursor-pointer">
+            All
+          </div>
+          <div class="text-gray-500 px-4 py-5 flex items-center cursor-pointer">
+            <svg
+              class="mr-2"
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="5" cy="5" r="5" fill="#2EB255" />
+            </svg>
+            Online
+          </div>
+          <div class="text-gray-500 px-4 py-5 flex items-center cursor-pointer">
+            <svg
+              class="mr-2"
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="5" cy="5" r="5" fill="#D14349" />
+            </svg>
+
+            Offline
+          </div>
         </div>
+        <Agents />
+        <Agents />
+        <Agents />
+        <Agents />
+        <Agents />
+        <Agents />
+        <Agents />
+        <Agents />
+        <Agents />
+        <Agents />
+        <Agents />
       </div>
     </div>
   </div>
