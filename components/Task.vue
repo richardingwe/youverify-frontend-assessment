@@ -1,5 +1,15 @@
 <template>
-  <div class="flex justify-between items-center px-5 py-6 border-b-2">
+  <div
+    class="
+      flex
+      justify-between
+      items-center
+      px-5
+      py-6
+      border-b-2
+      hover:bg-primary-100 hover:shadow
+    "
+  >
     <div class="flex flex-col items-center cursor-pointer">
       <img src="../assets/plus.svg" class="mb-1.5" alt="" />
       <span class="text-xs text-center text-gray-600"

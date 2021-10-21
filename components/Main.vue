@@ -49,12 +49,13 @@
             absolute
             top-0
             left-0
-            w-11
-            h-11
+            w-12
+            h-12
             bg-black
             flex
             justify-center
             items-center
+            cursor-pointer
           "
         >
           <svg
@@ -75,12 +76,13 @@
             absolute
             top-0
             right-0
-            w-11
-            h-11
+            w-12
+            h-12
             bg-black
             flex
             justify-center
             items-center
+            cursor-pointer
           "
         >
           <svg
