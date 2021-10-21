@@ -192,7 +192,7 @@
     <!-- right part of the header end -->
 
     <!-- Mobile header start -->
-    <div v-if="showMenu" class="fixed top-20 right-0 h-full">
+    <div v-if="showMenu" class="fixed top-16 right-0 h-full">
       <MobileHeader />
     </div>
     <!-- Mobile header end -->

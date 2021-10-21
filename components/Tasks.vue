@@ -18,11 +18,15 @@
     </div>
 
     <div class="grid grid-cols-3 bg-white text-sm border-b border-gray-200">
-      <div class="border-b-2 border-black px-4 py-5 cursor-pointer">
+      <div class="border-b-2 border-black pl-3 md:px-4 py-5 cursor-pointer">
         24 Unassigned
       </div>
-      <div class="text-gray-500 px-4 py-5 cursor-pointer">12 assigned</div>
-      <div class="text-gray-500 px-4 py-5 cursor-pointer">30 Completed</div>
+      <div class="text-gray-500 pl-3 md:px-4 py-5 cursor-pointer">
+        12 assigned
+      </div>
+      <div class="text-gray-500 pl-1 md:px-4 py-5 cursor-pointer">
+        30 Completed
+      </div>
     </div>
     <div>
       <Task />
