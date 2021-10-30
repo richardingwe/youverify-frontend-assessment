@@ -1,5 +1,5 @@
 <template>
-  <div class="col-span-3">
+  <div class="w-96 bg-white">
     <!-- tasks -->
     <div
       class="
@@ -28,7 +28,7 @@
         30 Completed
       </div>
     </div>
-    <div>
+    <div class="overflow-auto h-2/6">
       <Task />
       <Task />
       <Task />

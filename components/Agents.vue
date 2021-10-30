@@ -1,5 +1,5 @@
 <template>
-  <div class="col-span-3">
+  <div class="w-96 bg-white">
     <!-- agent -->
     <div
       class="
@@ -17,7 +17,7 @@
       Agents
     </div>
 
-    <div class="grid grid-cols-3 text-sm border-b border-gray-200">
+    <div class="grid grid-cols-3 text-sm border-b border-gray-200 bg-white">
       <div class="border-b-2 border-black px-4 py-5 cursor-pointer">All</div>
       <div class="text-gray-500 px-4 py-5 flex items-center cursor-pointer">
         <svg
@@ -46,18 +46,20 @@
         Offline
       </div>
     </div>
-    <Agent />
-    <Agent />
-    <Agent />
-    <Agent />
-    <Agent />
-    <Agent />
-    <Agent />
-    <Agent />
-    <Agent />
-    <Agent />
-    <Agent />
-    <Agent />
-    <Agent />
+    <div class="overflow-auto h-2/6">
+      <Agent />
+      <Agent />
+      <Agent />
+      <Agent />
+      <Agent />
+      <Agent />
+      <Agent />
+      <Agent />
+      <Agent />
+      <Agent />
+      <Agent />
+      <Agent />
+      <Agent />
+    </div>
   </div>
 </template>

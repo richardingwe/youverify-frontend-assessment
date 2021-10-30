@@ -8,6 +8,7 @@
       py-6
       border-b-2
       hover:bg-primary-100 hover:shadow
+      bg-white
     "
   >
     <div class="flex flex-col items-center cursor-pointer">

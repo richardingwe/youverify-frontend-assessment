@@ -1,16 +1,17 @@
 <template>
   <div class="transition duration-500 ease-in-out">
     <Header @SideNav="showSideNav = !showSideNav" />
-    <!-- side nav -->
-    <transition name="side">
-      <SideNav v-show="showSideNav" />
-    </transition>
+
     <div class="flex">
-      <!-- <transition name="side"> -->
-      <div v-show="showSideNav" class="w-14 lg:w-64 lg:mr-10" />
-      <!-- </transition> -->
-      <div class="w-full">
-        <Main />
+      <!-- side nav -->
+      <transition name="side">
+        <SideNav v-show="showSideNav" />
+      </transition>
+      <!-- side nav -->
+      <div class="flex w-full">
+        <div class="w-full">
+          <Main />
+        </div>
       </div>
     </div>
   </div>

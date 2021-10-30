@@ -35,13 +35,22 @@
       </div>
     </div>
 
-    <div class="hidden w-full lg:grid lg:grid-cols-9">
+    <div
+      class="
+        hidden
+        w-full
+        lg:flex lg:justify-between
+        justify-between
+        background
+      "
+      style=""
+    >
       <!-- tasks area start -->
       <Tasks />
       <!-- tasks area end -->
 
       <!-- map area start -->
-      <Map />
+      <!-- <Map /> -->
       <!-- map area end -->
 
       <!-- agents area start -->
@@ -61,4 +70,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.background {
+  background-image: url('../assets/guyana-distance 1.png');
+}
+</style>
