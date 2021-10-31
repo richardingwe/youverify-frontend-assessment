@@ -28,7 +28,7 @@
         30 Completed
       </div>
     </div>
-    <div class="overflow-auto" style="height: 500px">
+    <div class="overflow-auto" style="height: calc(100vh - 239px)">
       <Task />
       <Task />
       <Task />

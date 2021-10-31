@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-20">
+  <div class="pt-20 min-h-screen overflow-hidden">
     <div class="lg:w-full lg:h-12 bg-white" />
 
     <div class="lg:hidden w-full text-sm text-center bg-white grid grid-cols-3">
@@ -73,6 +73,6 @@ export default {
 <style>
 .background {
   background-image: url('../assets/guyana-distance 1.png');
-  height: 600px;
+  height: calc(100vh - 129px);
 }
 </style>

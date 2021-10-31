@@ -1,5 +1,5 @@
 <template>
-  <div class="w-12 lg:w-64 min-h-screen bg-primary-300">
+  <div class="w-12 lg:w-64 min-h-screen bg-primary-300 overflow-hidden">
     <div class="lg:h-20 mb-2"></div>
     <div class="hidden lg:block py-4 px-8 h-28 text-title bg-primary-400">
       <div class="w-40 text-lg font-bold">Cheta And Daughters Limited</div>
