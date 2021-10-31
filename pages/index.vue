@@ -38,4 +38,8 @@ export default {
 .side-leave-to {
   width: 0px;
 }
+.side-enter,
+.side-leave {
+  width: 0px;
+}
 </style>
