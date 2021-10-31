@@ -8,8 +8,8 @@
         <SideNav v-show="showSideNav" />
       </transition>
       <!-- side nav -->
-      <div class="flex w-full">
-        <div class="w-full">
+      <div class="flex w-full transition duration-500 ease-in-out">
+        <div class="w-full transition duration-500 ease-in-out">
           <Main />
         </div>
       </div>
@@ -32,10 +32,10 @@ export default {
 <style>
 .side-enter-active,
 .side-leave-active {
-  transition: 0.8s ease all;
+  transition: 0.5s ease all;
 }
 .side-enter-from,
 .side-leave-to {
-  transform: translateX(-700px);
+  width: 0px;
 }
 </style>

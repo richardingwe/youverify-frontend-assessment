@@ -28,7 +28,7 @@
         30 Completed
       </div>
     </div>
-    <div class="overflow-auto h-2/6">
+    <div class="overflow-auto" style="height: 500px">
       <Task />
       <Task />
       <Task />

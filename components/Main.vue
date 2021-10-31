@@ -73,5 +73,6 @@ export default {
 <style>
 .background {
   background-image: url('../assets/guyana-distance 1.png');
+  height: 600px;
 }
 </style>
