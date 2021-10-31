@@ -16,6 +16,9 @@ module.exports = {
             },
             fontSize: {
                 12: '12px'
+            },
+            backgroundImage: {
+                'map': "url('assets/guyana-distance 1.png')",
             }
         }
     }

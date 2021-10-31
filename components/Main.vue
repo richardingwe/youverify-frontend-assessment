@@ -36,14 +36,8 @@
     </div>
 
     <div
-      class="
-        hidden
-        w-full
-        lg:flex lg:justify-between
-        justify-between
-        background
-      "
-      style=""
+      class="hidden w-full lg:flex lg:justify-between justify-between bg-map"
+      style="height: calc(100vh - 129px)"
     >
       <!-- tasks area start -->
       <Tasks />
@@ -70,9 +64,4 @@ export default {
 }
 </script>
 
-<style>
-.background {
-  background-image: url('../assets/guyana-distance 1.png');
-  height: calc(100vh - 129px);
-}
-</style>
+<style></style>
