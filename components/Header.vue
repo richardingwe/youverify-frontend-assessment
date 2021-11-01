@@ -6,7 +6,8 @@
       justify-between
       items-center
       bg-white
-      px-8
+      px-3
+      lg:px-8
       py-4
       shadow
       fixed
@@ -22,7 +23,8 @@
         class="
           w-36
           cursor-pointer
-          mr-14
+          mr-4
+          lg:mr-14
           transform
           hover:translate-x-1
           transition
