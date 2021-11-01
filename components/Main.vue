@@ -151,18 +151,18 @@ export default {
 }
 .fade-enter-active,
 .fade-leave-active {
-  transition: 0.3s ease all !important;
+  transition: 0.2s ease all !important;
 }
 
 .fade-enter-from,
 .fade-leave-to {
   transform: translateX(-100vw);
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 .fade-enter,
 .fade-leave {
   transform: translateX(-100vw);
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 </style>
