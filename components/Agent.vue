@@ -15,7 +15,7 @@
       <img src="../assets/photo.png" class="rounded-full" alt="" />
     </div>
     <div class="flex flex-col">
-      <span class="text-xs pb-1.5 font-medium">Adebayo Adeoye Emmanuel</span>
+      <span class="text-xs pb-1.5 font-medium">{{ name }}</span>
       <span class="text-xs pb-1.5 text-gray-400">08069786754</span>
       <span class="text-xs pb-1.5 text-gray-400">Akure</span>
     </div>
@@ -34,3 +34,9 @@
     </svg>
   </div>
 </template>
+
+<script>
+export default {
+  props: ['name'],
+}
+</script>

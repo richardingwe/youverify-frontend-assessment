@@ -18,8 +18,18 @@
     </div>
 
     <div class="grid grid-cols-3 text-sm border-b border-gray-200 bg-white">
-      <div class="border-b-2 border-black px-4 py-5 cursor-pointer">All</div>
-      <div class="text-gray-500 px-4 py-5 flex items-center cursor-pointer">
+      <div
+        class="px-4 py-5 cursor-pointer"
+        :class="{ 'border-b-2 border-black': show === 'all' }"
+        @click="show = 'all'"
+      >
+        All
+      </div>
+      <div
+        class="text-gray-500 px-4 py-5 flex items-center cursor-pointer"
+        :class="{ 'border-b-2 border-black': show === 'online' }"
+        @click="show = 'online'"
+      >
         <svg
           class="mr-2"
           width="10"
@@ -32,7 +42,11 @@
         </svg>
         Online
       </div>
-      <div class="text-gray-500 px-4 py-5 flex items-center cursor-pointer">
+      <div
+        class="text-gray-500 px-4 py-5 flex items-center cursor-pointer"
+        :class="{ 'border-b-2 border-black': show === 'offline' }"
+        @click="show = 'offline'"
+      >
         <svg
           class="mr-2"
           width="10"
@@ -47,19 +61,82 @@
       </div>
     </div>
     <div class="overflow-auto" style="height: calc(100vh - 239px)">
-      <Agent />
-      <Agent />
-      <Agent />
-      <Agent />
-      <Agent />
-      <Agent />
-      <Agent />
-      <Agent />
-      <Agent />
-      <Agent />
-      <Agent />
-      <Agent />
-      <Agent />
+      <transition name="agent">
+        <div v-if="show === 'all'">
+          <Agent name="Adebayo Adeoye Emmanuel" />
+          <Agent name="Adebayo Adeoye Emmanuel" />
+          <Agent name="Adebayo Adeoye Emmanuel" />
+          <Agent name="Adebayo Adeoye Emmanuel" />
+          <Agent name="Adebayo Adeoye Emmanuel" />
+          <Agent name="Adebayo Adeoye Emmanuel" />
+          <Agent name="Adebayo Adeoye Emmanuel" />
+          <Agent name="Adebayo Adeoye Emmanuel" />
+          <Agent name="Adebayo Adeoye Emmanuel" />
+          <Agent name="Adebayo Adeoye Emmanuel" />
+          <Agent name="Adebayo Adeoye Emmanuel" />
+          <Agent name="Adebayo Adeoye Emmanuel" />
+          <Agent name="Adebayo Adeoye Emmanuel" />
+        </div>
+      </transition>
+      <transition name="agent">
+        <div v-if="show === 'online'">
+          <Agent name="Oyekachi Samuel Odaba" />
+          <Agent name="Oyekachi Samuel Odaba" />
+          <Agent name="Oyekachi Samuel Odaba" />
+          <Agent name="Oyekachi Samuel Odaba" />
+          <Agent name="Oyekachi Samuel Odaba" />
+          <Agent name="Oyekachi Samuel Odaba" />
+          <Agent name="Oyekachi Samuel Odaba" />
+          <Agent name="Oyekachi Samuel Odaba" />
+          <Agent name="Oyekachi Samuel Odaba" />
+          <Agent name="Oyekachi Samuel Odaba" />
+          <Agent name="Oyekachi Samuel Odaba" />
+          <Agent name="Oyekachi Samuel Odaba" />
+          <Agent name="Oyekachi Samuel Odaba" />
+        </div>
+      </transition>
+      <transition name="agent">
+        <div v-if="show === 'offline'">
+          <Agent name="Peace Anthony Kubua" />
+          <Agent name="Peace Anthony Kubua" />
+          <Agent name="Peace Anthony Kubua" />
+          <Agent name="Peace Anthony Kubua" />
+          <Agent name="Peace Anthony Kubua" />
+          <Agent name="Peace Anthony Kubua" />
+          <Agent name="Peace Anthony Kubua" />
+          <Agent name="Peace Anthony Kubua" />
+          <Agent name="Peace Anthony Kubua" />
+          <Agent name="Peace Anthony Kubua" />
+          <Agent name="Peace Anthony Kubua" />
+          <Agent name="Peace Anthony Kubua" />
+          <Agent name="Peace Anthony Kubua" />
+        </div>
+      </transition>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      show: 'all',
+    }
+  },
+}
+</script>
+
+<style>
+.agent-enter-active,
+.agent-leave-active {
+  transition: 0.3s ease all;
+}
+.agent-enter-from,
+.agent-leave-to {
+  opacity: 0;
+}
+.agent-enter,
+.agent-leave {
+  opacity: 0;
+}
+</style>

@@ -19,7 +19,7 @@
       >
     </div>
     <div class="flex flex-col">
-      <span class="text-xs pb-1.5 font-medium">Abiodun Olawale Solomon</span>
+      <span class="text-xs pb-1.5 font-medium">{{ name }}</span>
       <span class="text-xs pb-1.5 text-gray-400"
         >12b Emmanuel Hign street, Sur...</span
       >
@@ -44,3 +44,9 @@
     </svg>
   </div>
 </template>
+
+<script>
+export default {
+  props: ['name'],
+}
+</script>

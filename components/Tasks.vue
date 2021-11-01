@@ -18,28 +18,122 @@
     </div>
 
     <div class="grid grid-cols-3 bg-white text-sm border-b border-gray-200">
-      <div class="border-b-2 border-black pl-3 lg:px-4 py-5 cursor-pointer">
+      <div
+        class="pl-3 lg:px-4 py-5 cursor-pointer"
+        :class="{ 'border-b-2 border-black': show === 'unassigned' }"
+        @click="show = 'unassigned'"
+      >
         24 Unassigned
       </div>
-      <div class="text-gray-500 pl-3 lg:px-4 py-5 cursor-pointer">
+      <div
+        class="text-gray-500 pl-3 lg:px-4 py-5 cursor-pointer"
+        :class="{ 'border-b-2 border-black': show === 'assigned' }"
+        @click="show = 'assigned'"
+      >
         12 assigned
       </div>
-      <div class="text-gray-500 pl-1 lg:px-4 py-5 cursor-pointer">
+      <div
+        class="text-gray-500 pl-1 lg:px-4 py-5 cursor-pointer"
+        :class="{ 'border-b-2 border-black': show === 'completed' }"
+        @click="show = 'completed'"
+      >
         30 Completed
       </div>
     </div>
     <div class="overflow-auto" style="height: calc(100vh - 239px)">
-      <Task />
-      <Task />
-      <Task />
-      <Task />
-      <Task />
-      <Task />
-      <Task />
-      <Task />
-      <Task />
-      <Task />
-      <Task />
+      <transition name="task">
+        <div v-if="show === 'unassigned'">
+          <Task name="Abiodun Olawale Solomon" />
+          <Task name="Mercy Timothy Bakare" />
+          <Task name="Tafawa Balewa Okon" />
+          <Task name="Abiodun Olawale Solomon" />
+          <Task name="Mercy Timothy Bakare" />
+          <Task name="Tafawa Balewa Okon" />
+          <Task name="Mercy Timothy Bakare" />
+          <Task name="Tafawa Balewa Okon" />
+          <Task name="Abiodun Olawale Solomon" />
+          <Task name="Abiodun Olawale Solomon" />
+          <Task name="Mercy Timothy Bakare" />
+          <Task name="Tafawa Balewa Okon" />
+          <Task name="Abiodun Olawale Solomon" />
+          <Task name="Mercy Timothy Bakare" />
+          <Task name="Tafawa Balewa Okon" />
+          <Task name="Mercy Timothy Bakare" />
+          <Task name="Tafawa Balewa Okon" />
+          <Task name="Abiodun Olawale Solomon" />
+        </div>
+      </transition>
+
+      <transition name="task">
+        <div v-if="show === 'assigned'">
+          <Task name="Tafawa Balewa Okon" />
+          <Task name="Abiodun Olawale Solomon" />
+          <Task name="Mercy Timothy Bakare" />
+          <Task name="Abiodun Olawale Solomon" />
+          <Task name="Mercy Timothy Bakare" />
+          <Task name="Tafawa Balewa Okon" />
+          <Task name="Mercy Timothy Bakare" />
+          <Task name="Tafawa Balewa Okon" />
+          <Task name="Abiodun Olawale Solomon" />
+          <Task name="Tafawa Balewa Okon" />
+          <Task name="Abiodun Olawale Solomon" />
+          <Task name="Mercy Timothy Bakare" />
+          <Task name="Abiodun Olawale Solomon" />
+          <Task name="Mercy Timothy Bakare" />
+          <Task name="Tafawa Balewa Okon" />
+          <Task name="Mercy Timothy Bakare" />
+          <Task name="Tafawa Balewa Okon" />
+          <Task name="Abiodun Olawale Solomon" />
+        </div>
+      </transition>
+
+      <transition name="task">
+        <div v-if="show === 'completed'">
+          <Task name="Mercy Timothy Bakare" />
+          <Task name="Tafawa Balewa Okon" />
+          <Task name="Abiodun Olawale Solomon" />
+          <Task name="Mercy Timothy Bakare" />
+          <Task name="Tafawa Balewa Okon" />
+          <Task name="Abiodun Olawale Solomon" />
+          <Task name="Tafawa Balewa Okon" />
+          <Task name="Abiodun Olawale Solomon" />
+          <Task name="Mercy Timothy Bakare" />
+          <Task name="Mercy Timothy Bakare" />
+          <Task name="Tafawa Balewa Okon" />
+          <Task name="Abiodun Olawale Solomon" />
+          <Task name="Mercy Timothy Bakare" />
+          <Task name="Tafawa Balewa Okon" />
+          <Task name="Abiodun Olawale Solomon" />
+          <Task name="Tafawa Balewa Okon" />
+          <Task name="Abiodun Olawale Solomon" />
+          <Task name="Mercy Timothy Bakare" />
+        </div>
+      </transition>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      show: 'unassigned',
+    }
+  },
+}
+</script>
+
+<style>
+.task-enter-active,
+.task-leave-active {
+  transition: 0.3s ease all;
+}
+.task-enter-from,
+.task-leave-to {
+  opacity: 0;
+}
+.task-enter,
+.task-leave {
+  opacity: 0;
+}
+</style>
