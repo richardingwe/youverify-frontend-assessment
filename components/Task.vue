@@ -2,7 +2,6 @@
   <div
     class="
       flex
-      justify-between
       items-center
       px-5
       py-6
@@ -11,14 +10,14 @@
       bg-white
     "
   >
-    <div class="flex flex-col items-center cursor-pointer">
+    <div class="flex flex-col items-center cursor-pointer mr-6">
       <img src="../assets/plus.svg" class="mb-1.5" alt="" />
       <span class="text-xs text-center text-gray-600"
         >Assign <br />
         Agent</span
       >
     </div>
-    <div class="flex flex-col">
+    <div class="flex flex-col mr-16">
       <span class="text-xs pb-1.5 font-medium">{{ name }}</span>
       <span class="text-xs pb-1.5 text-gray-400"
         >12b Emmanuel Hign street, Sur...</span

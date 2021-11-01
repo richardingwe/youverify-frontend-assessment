@@ -2,7 +2,6 @@
   <div
     class="
       flex
-      justify-between
       items-center
       px-5
       py-6
@@ -11,10 +10,10 @@
       bg-white
     "
   >
-    <div class="flex flex-col items-center cursor-pointer">
+    <div class="flex flex-col items-center cursor-pointer mr-4">
       <img src="../assets/photo.png" class="rounded-full" alt="" />
     </div>
-    <div class="flex flex-col">
+    <div class="flex flex-col mr-20">
       <span class="text-xs pb-1.5 font-medium">{{ name }}</span>
       <span class="text-xs pb-1.5 text-gray-400">08069786754</span>
       <span class="text-xs pb-1.5 text-gray-400">Akure</span>
