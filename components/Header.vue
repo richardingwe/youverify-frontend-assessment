@@ -42,8 +42,7 @@
           justify-center
           items-center
           cursor-pointer
-          hidden
-          md:flex
+          flex
         "
         @click="handleSideNav"
       >

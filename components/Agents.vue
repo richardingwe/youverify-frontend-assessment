@@ -1,5 +1,5 @@
 <template>
-  <div class="w-96 bg-white">
+  <div class="w-full md:w-96 bg-white">
     <!-- agent -->
     <div
       class="

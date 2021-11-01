@@ -2,19 +2,19 @@
   <div class="pt-20 min-h-screen overflow-hidden">
     <div class="lg:w-full lg:h-12 bg-white" />
 
-    <div class="lg:hidden w-full text-sm text-center bg-white grid grid-cols-3">
+    <div class="lg:hidden w-full text-sm text-center bg-white grid grid-cols-2">
       <span
         @click="show = 'tasks'"
         class="p-2"
         :class="{ 'bg-primary-300 text-white': show === 'tasks' }"
         >Task</span
       >
-      <span
+      <!-- <span
         @click="show = 'map'"
         class="p-2"
         :class="{ 'bg-primary-300 text-white': show === 'map' }"
         >Map</span
-      >
+      > -->
       <span
         @click="show = 'agents'"
         class="p-2"
@@ -24,15 +24,19 @@
     </div>
 
     <div class="lg:hidden w-full">
-      <div v-if="show === 'tasks'">
-        <Tasks />
-      </div>
-      <div v-if="show === 'map'" class="h-full">
+      <transition name="fade">
+        <div v-if="show === 'tasks'">
+          <Tasks />
+        </div>
+      </transition>
+      <!-- <div v-if="show === 'map'" class="h-full">
         <Map />
-      </div>
-      <div v-if="show === 'agents'">
-        <Agents />
-      </div>
+      </div> -->
+      <transition name="fade">
+        <div v-if="show === 'agents'">
+          <Agents />
+        </div>
+      </transition>
     </div>
 
     <div
@@ -144,5 +148,21 @@ export default {
 .tab-leave {
   width: 0px;
   overflow: hidden;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: 0.3s ease all !important;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  transform: translateX(-100vw);
+  opacity: 0.5;
+}
+
+.fade-enter,
+.fade-leave {
+  transform: translateX(-100vw);
+  opacity: 0.5;
 }
 </style>

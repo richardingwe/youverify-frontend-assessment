@@ -1,5 +1,5 @@
 <template>
-  <div class="w-96 bg-white">
+  <div class="w-full lg:w-96 bg-white">
     <!-- tasks -->
     <div
       class="
