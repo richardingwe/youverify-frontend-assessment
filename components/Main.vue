@@ -57,6 +57,8 @@
           "
         >
           <svg
+            class="transition 200 ease-in"
+            :class="{ 'rotate-180': showTask === false }"
             width="8"
             height="12"
             viewBox="0 0 8 12"
@@ -91,6 +93,8 @@
           "
         >
           <svg
+            class="transition 200 ease-in"
+            :class="{ 'rotate-180': showAgent === false }"
             width="8"
             height="12"
             viewBox="0 0 8 12"
