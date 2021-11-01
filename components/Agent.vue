@@ -10,7 +10,7 @@
       bg-white
     "
   >
-    <div class="flex flex-col items-center cursor-pointer mr-4">
+    <div class="flex flex-col items-center cursor-pointer mr-5">
       <img src="../assets/photo.png" class="rounded-full" alt="" />
     </div>
     <div class="flex flex-col mr-20">
