@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-screen flex-col p-5 bg-white md:hidden">
+  <div class="flex w-screen min-h-screen flex-col p-5 bg-white md:hidden">
     <div id="middle" class="w-full justify-between items-center flex mb-5">
       <div id="search" class="w-full px-3 bg-gray-100 h-14 flex items-center">
         <select

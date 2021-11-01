@@ -197,9 +197,11 @@
     <!-- right part of the header end -->
 
     <!-- Mobile header start -->
-    <div v-if="showMenu" class="fixed top-16 right-0 h-full">
-      <MobileHeader />
-    </div>
+    <transition name="height">
+      <div v-if="showMenu" class="fixed top-16 right-0 h-full">
+        <MobileHeader />
+      </div>
+    </transition>
     <!-- Mobile header end -->
 
     <!-- menu start -->
@@ -238,3 +240,18 @@ export default {
   },
 }
 </script>
+
+<style>
+.height-enter-active,
+.height-leave-active {
+  transition: 0.3s ease all;
+}
+.height-enter-from,
+.height-leave-to {
+  opacity: 0;
+}
+.height-enter,
+.height-leave {
+  opacity: 0;
+}
+</style>
